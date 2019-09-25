@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/underwater"
+    tools:context=".Activity2">
+
+    <ImageView
+        android:id="@+id/fishImageFour"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="456dp"
+        android:layout_marginRight="456dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fishfour" />
+
+    <ImageView
+        android:id="@+id/fishImageFive"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginRight="236dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fishfive" />
+
+    <ImageView
+        android:id="@+id/fishImageSix"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fishsix" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="360dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fisherman" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="221dp"
+        android:layout_marginLeft="221dp"
+        android:layout_marginTop="79dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:srcCompat="@drawable/wave" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginRight="296dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wave" />
+
+    <ImageView
+        android:id="@+id/pokeFloatBall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/actualballone" />
+
+    <ImageView
+        android:id="@+id/fishImageOne"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="456dp"
+        android:layout_marginRight="456dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fishthreeactual" />
+
+    <ImageView
+        android:id="@+id/fishImageTwo"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginRight="236dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fishtwoactual" />
+
+    <ImageView
+        android:id="@+id/fishImageThree"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fishthree" />
+
+    <ImageView
+        android:id="@+id/restartImageView"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:onClick="restartGame"
+        app:layout_constraintBottom_toTopOf="@+id/fishImageTwo"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:srcCompat="@drawable/restart2" />
+
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="84dp"
+        android:text="Points: 0"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Time: 60s"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fishImageOne"
+        app:srcCompat="@drawable/trashcan" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fishImageThree"
+        app:srcCompat="@drawable/trashcan" />
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="416dp">
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
